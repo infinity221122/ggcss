@@ -1,0 +1,217 @@
+// /* Main container styling */
+// .container {
+//   padding: 20px;
+//   background-color: #a4bab5;
+//   color: #fafafa;
+//   font-family: Arial, sans-serif;
+// }
+
+// /* Heading styles */
+// h2, h3 {
+//   color: #3D8D7A;
+// }
+
+// /* Form container and labels */
+// .form-group {
+//   margin-bottom: 15px;
+// }
+
+// label {
+//   display: block;
+//   margin-bottom: 5px;
+//   color: #3D8D7A;
+// }
+
+// /* Input fields */
+// input[type="text"],
+// textarea,
+// select {
+//   width: 100%;
+//   padding: 10px;
+//   border: 1px solid #A3D1C6;
+//   border-radius: 5px;
+//   margin-bottom: 10px;
+// }
+
+// textarea {
+//   resize: vertical;
+// }
+
+// /* Error message */
+// .error {
+//   color: #B3D8A8;
+//   margin-top: 5px;
+// }
+
+// /* Submit button */
+// button[type="submit"] {
+//   background-color: #3D8D7A;
+//   color: #FBFFE4;
+//   padding: 10px 20px;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+// }
+
+// button[type="submit"]:hover {
+//   background-color: #B3D8A8;
+// }
+
+// /* Alert messages */
+// .alert {
+//   padding: 10px;
+//   border-radius: 5px;
+//   margin-top: 20px;
+// }
+
+// .alert-success {
+//   background-color: #A3D1C6;
+//   color: #3D8D7A;
+// }
+
+// .alert-danger {
+//   background-color: #B3D8A8;
+//   color: #3D8D7A;
+// }
+
+// /* Event list */
+// ul {
+//   list-style-type: none;
+//   padding: 0;
+// }
+
+// li {
+//   background-color:  #a4bab5;
+//   padding: 10px;
+//   margin-bottom: 5px;
+//   border: 1px solid #A3D1C6;
+//   border-radius: 5px;
+// }
+/* Main container styling */
+
+/* Main container styling */
+.container {
+    padding: 20px;
+    background-color: #dee4ea; /* Dark blue */
+    color: #fafafa;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styles */
+h2, h3 {
+    color: #5c88b5; /* Darker blue */
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Form container and labels */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1A2A3A; /* Darker blue */
+}
+
+/* Input fields */
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #34495E; /* Dark blue */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #1A2A3A; /* Darker blue */
+    box-shadow: 0 0 8px rgba(26, 42, 58, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Error message */
+.error {
+    color: #5D6D7E; /* Lighter blue */
+    margin-top: 5px;
+}
+
+/* Submit button */
+button[type="submit"] {
+    background-color: #1A2A3A; /* Darker blue */
+    color: #FBFFE4;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #34495E; /* Dark blue */
+    transform: translateY(-2px);
+}
+
+/* Alert messages */
+.alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alert-success {
+    background-color: #34495E; /* Dark blue */
+    color: #FBFFE4;
+}
+
+.alert-danger {
+    background-color: #5D6D7E; /* Lighter blue */
+    color: #FBFFE4;
+}
+
+/* Event list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #2C3E50; /* Dark blue */
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #34495E; /* Dark blue */
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+li:hover {
+    background-color: #34495E; /* Dark blue */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

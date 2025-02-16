@@ -1,3 +1,91 @@
-a{
+body {
+    background-color: #FBFFE4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+video.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    position: relative;
+    z-index: 1; /* Ensure the container is above the video */
+}
+
+form {
+    background-color: rgba(52, 73, 94, 0.8); /* Adjust opacity as needed */
+    padding: 20px;
+    border-radius: 8px;
+    color:white;
+    backdrop-filter: blur(-100px); /* Add blur effect */
+}
+
+h3 {
+    color: #B3D8A8;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #A3D1C6;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #A3D1C6;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2); /* Make input fields transparent */
+    color: #FBFFE4;
+}
+
+button[type="submit"] {
+    background-color: #B3D8A8;
+    color: #3D8D7A;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #A3D1C6;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: #3D8D7A;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.btn-link:hover {
+    color: #A3D1C6;
+}
+
+.text-danger {
+    color: #FBFFE4;
+}
+
+.alert-danger {
+    background-color: #A3D1C6;
+    color: #3D8D7A;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
 }

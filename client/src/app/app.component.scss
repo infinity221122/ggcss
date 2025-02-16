@@ -1,0 +1,164 @@
+// /* Navbar */
+// .navbar {
+//   background-color: #3D8D7A; /* Light blue */
+// }
+
+// .navbar-brand {
+//   font-family:Georgia, 'Times New Roman', Times, serif;
+//   font-weight: bold;
+//   color: #ffffff;
+//   font-size: 24px;
+//   display: flex;
+//   align-items: center;
+// }
+
+// .navbar-brand::before {
+//   //content: url('../assets/image.png') ;
+//   margin-right: 10px;
+//   // height :2px;
+//   // width : 2px;
+ 
+// }
+
+// .logout{
+//   margin-left: 450px;
+// }
+
+// /* Navbar links */
+// .navbar-nav .nav-item .nav-link {
+//   color: #B3D8A8;
+//   margin-right: 15px;
+// }
+
+// .navbar-nav .nav-item .nav-link:hover {
+//   color: #fbffe4;
+//   text-decoration: underline;
+// }
+
+// /* Buttons as links */
+// .nav-item .nav-link {
+//   padding: 10px 20px;
+//   border-radius: 20px;
+//   background-color: #6c757d; /* Grey for buttons */
+//   color: #ffffff;
+//   margin-right: 10px;
+//   text-align: center;
+// }
+
+// .nav-item .nav-link:hover {
+//   background-color: #3D8D7A;
+//   color: #ffffff;
+// }
+
+// /* Align buttons to the right */
+// .navbar-nav.ml-auto {
+//   margin-left: auto;
+// }
+
+// /* Login/Logout buttons */
+// .nav-item .btn {
+//   color: #ffffff;
+//   margin-right: 15px;
+//   padding: 10px 20px;
+//   border-radius: 20px;
+// }
+
+// .nav-item .btn:hover {
+//   background-color: #0069d9;
+//   color: #ffffff;
+// }
+
+// /* Container */
+// .container {
+//   margin-top: 20px;
+//   padding: 20px;
+//   background-color: #f8f9fa;
+//   border-radius: px;
+//   box-shadow: 0 4px 8px ;
+// }
+/* Navbar */
+.navbar {
+  background-color:  #34495E;; /* Light blue */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.logout {
+  margin-left: auto;
+}
+
+/* Navbar links */
+.navbar-nav .nav-item .nav-link {
+  color: #B3D8A8;
+  margin-right: 15px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #FBFFE4;
+  text-decoration: underline;
+}
+
+/* Buttons as links */
+.nav-item .nav-link {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #6c757d; /* Grey for buttons */
+  color: #ffffff;
+  margin-right: 10px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item .nav-link:hover {
+  background-color: #3D8D7A;
+  color: #ffffff;
+}
+
+/* Align buttons to the right */
+.navbar-nav.ml-auto {
+  margin-left: auto;
+}
+
+/* Login/Logout buttons */
+.nav-item .btn {
+  color: #ffffff;
+  margin-right: 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #6c757d;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item .btn:hover {
+  background-color: #060c0b;
+  color: #ffffff;
+}
+
+/* Container */
+.container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

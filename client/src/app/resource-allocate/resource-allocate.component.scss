@@ -1,0 +1,136 @@
+// body {
+//     background-color: #3D8D7A;
+//     font-family: Arial, sans-serif;
+// }
+
+// form {
+//     background-color: #3D8D7A;
+//     padding: 20px;
+//     border-radius: 8px;
+//     width: 300px;
+//     margin: auto;
+//     color: #FBFFE4;
+// }
+
+// h1, h3 {
+//     color: #B3D8A8;
+//     text-align: center;
+// }
+
+// label {
+//     display: block;
+//     margin-bottom: 5px;
+//     color: #A3D1C6;
+// }
+
+// select, input[type="number"] {
+//     width: 100%;
+//     padding: 8px;
+//     margin-bottom: 10px;
+//     border: 1px solid #A3D1C6;
+//     border-radius: 4px;
+// }
+
+// button {
+//     background-color: #B3D8A8;
+//     color: #3D8D7A;
+//     padding: 10px;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+//     width: 100%;
+// }
+
+// button:hover {
+//     background-color: #A3D1C6;
+// }
+
+// div *ngIf {
+//     color: #3D8D7A;
+//     margin-top: 5px;
+// }
+
+// div *ngIf div {
+//     color: #3D8D7A;
+// }
+body {
+    background-color: #2C3E50; /* Dark blue */
+    font-family: Arial, sans-serif;
+}
+
+form {
+    background-color: #34495E; /* Darker blue */
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: auto;
+    color: #FBFFE4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1, h3 {
+    color: #5c88b5; /* Light blue */
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #A3D1C6; /* Light blue */
+}
+
+select, input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #A3D1C6; /* Light blue */
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+select:focus, input[type="number"]:focus {
+    border-color: #5c88b5; /* Light blue */
+    box-shadow: 0 0 8px rgba(92, 136, 181, 0.5);
+}
+
+button {
+    background-color: #5c88b5; /* Light blue */
+    color: #2C3E50; /* Dark blue */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #A3D1C6; /* Light blue */
+    transform: translateY(-2px);
+}
+
+div *ngIf {
+    color: #5D6D7E; /* Lighter blue */
+    margin-top: 5px;
+}
+
+div *ngIf div {
+    color: #5D6D7E; /* Lighter blue */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

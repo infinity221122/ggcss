@@ -1,1 +1,36 @@
-//todo: complete missing code..
+<div>
+    <h1>Manage Resource Allocation</h1>
+<div>
+    <h3>Add Resource Allocation</h3>
+    <form action="" [formGroup]="itemForm" (ngSubmit)="onSubmit()">
+        <div>
+        <label for="eventId">Event</label>
+        <select id="eventId" formControlName="eventId">
+            <option value="">Choose Event</option>
+            <option *ngFor="let event of eventList" [value]="event.eventID">{{event.title}}</option>
+        </select>
+        </div>
+ 
+        <div>
+            <label for="resourceId">Resource</label>
+            <select id="resourceId" formControlName="resourceId">
+                <option value="">Choose Resource</option>
+                <option *ngFor="let resource of resourceList" [value]="resource.resourceID">{{resource.name}}</option>
+            </select>
+        </div>
+ 
+        <div>
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" formControlName="quantity">
+            <div *ngIf="itemForm.get('quantity')?.invalid && itemForm.get('quantity')?.touched">
+                <div *ngIf="itemForm.get('quantity')?.errors?.['required']">Quantity is required.</div>
+                <div *ngIf="itemForm.get('quantity')?.errors?.['min']">Minimum quantity is 1.</div>
+            </div>
+        </div>
+        <div *ngIf="showMessage">{{responseMessage}}</div>
+        <div *ngIf="showError">{{errorMessage}}</div>
+ 
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</div>
