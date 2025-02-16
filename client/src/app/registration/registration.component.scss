@@ -21,7 +21,6 @@ video.background-video {
     margin: auto;
     position: relative;
     z-index: 1; /* Ensure the container is above the video */
-    backdrop-filter: blur(-100px); /* Add blur effect to container */
 }
 
 form {
@@ -29,6 +28,7 @@ form {
     padding: 20px;
     border-radius: 8px;
     color: #FBFFE4;
+    backdrop-filter: blur(10px); /* Add blur effect to form */
 }
 
 h2 {
